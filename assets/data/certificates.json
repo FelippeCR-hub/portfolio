@@ -1,0 +1,30 @@
+[
+  {
+    "id": "certificasdo-seta1",
+    "name": "Técnico em Informática",
+    "institution": "Colégio Seta",
+    "year": "2022 - 2024",
+    "badge": "assets/img/colegioseta.png"
+  },
+  {
+    "id": "certificado-saojudas2",
+    "name": "Ambientes Computacionais e Conectividade",
+    "institution": "Universidade São Judas Tadeu",
+    "year": "2025",
+    "badge": "assets/img/saojudas.png"
+  },
+  {
+    "id": "certificado-saojudas1",
+    "name": "Sistemas Computacionais e Segurança ",
+    "institution": "Universidade São Judas Tadeu",
+    "year": "2025",
+    "badge": "assets/img/saojudas.png"
+  },
+  {
+    "id": "certificado-bradesco1",
+    "name": "Administrando Banco de Dados",
+    "institution": "Fundação Bradesco",
+    "year": "2026",
+    "badge": "assets/img/bradesco.jpg"
+  }
+]

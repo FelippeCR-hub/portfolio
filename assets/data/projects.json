@@ -1,0 +1,23 @@
+[
+  {
+    "id": "neon-crm",
+    "title": "SAB - Otimizações",
+    "category": "web",
+    "featured": true,
+    "tagline": "Projeto",
+    "stack": [
+      "HTML5",
+      "CSS3",
+      "JavaScript"
+    ],
+    "highlights": [
+      "Otimizador de performance para computadores"
+    ],
+  
+    "gallery": [
+      "assets/img/sab1.png",
+      "assets/img/sab2.png",
+      "assets/img/sab3.png"
+    ]
+  }
+]

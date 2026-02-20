@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projetos | Felippe Santos</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <meta name="description" content="Portfólio cyberpunk agressivo de Felippe Santos — projetos, skills, trajetória e contato." />
+  <meta property="og:title" content="Felippe Santos | Portfólio" />
+  <meta property="og:description" content="Projetos, habilidades e trajetória — UI cyberpunk com modo escuro/claro." />
+  <meta property="og:type" content="website" />
+
+  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Rajdhani:wght@400;600&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/global.css" />
+</head>
+<body>
+  <canvas id="particles"></canvas>
+  <div class="blobs" aria-hidden="true">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+  </div>
+  <div class="bg-layer"></div>
+  <div class="hud-grid"></div>
+  <div class="vignette"></div>
+  <div class="scanlines"></div>
+  <div class="noise"></div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo">FELIPPE OLIVEIRA</div>
+        <div class="badge">CYBERPUNK • PORTFOLIO</div>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">HOME</a>
+        <a href="projects.html">PROJETOS</a>
+        <a href="index.html#trajetoria">TRAJETÓRIA</a>
+        <a href="index.html#contato">CONTATO</a>
+      </nav>
+
+      <div class="header-ctas">
+        <button id="themeToggle" class="icon-btn">☀️/🌑</button>
+        <a class="icon-btn secondary" href="Felippe_Santos_Currículo.pdf" download>Currículo</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+
+  <section class="section">
+    <div class="container reveal in">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> / <span>Projetos</span>
+      </div>
+
+      <div class="section-title">
+        <h2>PROJETOS</h2><div class="hr"></div>
+      </div>
+
+      
+
+      <div class="searchbar">
+        <input id="projectSearch" type="search" placeholder="Buscar: nome, stack, descrição..." aria-label="Buscar projetos">
+        <div class="hint">Busca interna</div>
+      </div>
+
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">TODOS</button>
+        <button class="filter-btn" data-filter="web">WEB</button>
+        <button class="filter-btn" data-filter="database">DATABASE</button>
+        <button class="filter-btn" data-filter="hardware">HARDWARE</button>
+      </div>
+
+      <div class="grid" id="projectsGrid"></div>
+    </div>
+  </section>
+
+  <script src="assets/js/projects.js"></script>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+    <center> <div class="small">© <span id="year"></span> Felippe Santos • Estrutura escalável • Tema persistente • UI Cyberpunk</div></center> 
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="assets/js/fx.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
