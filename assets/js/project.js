@@ -42,7 +42,7 @@
       <div style="margin-top:16px" class="grid">
         <div class="card" style="grid-column: span 6;">
           <h3>Objetivo</h3>
-          <p>${escapeHtml((proj.objective || "Projeto fictício para portfolio — substitua pelo seu caso real."))}</p>
+          <p>${escapeHtml((proj.objective || "Projeto para portfolio "))}</p>
         </div>
         <div class="card" style="grid-column: span 6;">
           <h3>Destaques</h3>
