@@ -1,8 +1,7 @@
-
-(async function(){
+(async function () {
   const mount = document.getElementById("certGrid");
-  if(!mount) return;
-  try{
+  if (!mount) return;
+  try {
     const res = await fetch("assets/data/certificates.json");
     const certs = await res.json();
     mount.innerHTML = certs.map(c => `
@@ -15,9 +14,21 @@
         </div>
       </article>
     `).join("");
-  }catch(e){}
-  function escapeHtml(str){
-    return String(str).replace(/[&<>"']/g, (m) => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[m]));
+  } catch (e) {
+    console.error(e);
   }
-  function escapeAttr(str){ return escapeHtml(str).replace(/`/g, "&#96;"); }
+
+  function escapeHtml(str) {
+    return String(str).replace(/[&<>"']/g, (m) => ({
+      "&": "&amp;",
+      "<": "&lt;",
+      ">": "&gt;",
+      '"': "&quot;",
+      "'": "&#39;"
+    } [m]));
+  }
+
+  function escapeAttr(str) {
+    return escapeHtml(str).replace(/`/g, "&#96;");
+  }
 })();

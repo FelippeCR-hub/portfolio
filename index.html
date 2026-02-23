@@ -1,5 +1,6 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,13 +10,16 @@
   <meta property="og:title" content="Felippe Santos | Portfólio" />
   <meta property="og:description" content="Meu Portfólio como Dev!" />
   <meta property="og:type" content="website" />
-  
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Rajdhani:wght@400;600&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Rajdhani:wght@400;600&family=Space+Grotesk:wght@400;600&display=swap"
+    rel="stylesheet" />
 
   <link rel="stylesheet" href="assets/css/global.css" />
 </head>
+
 <body>
   <canvas id="particles"></canvas>
   <div class="blobs" aria-hidden="true">
@@ -32,8 +36,8 @@
   <header class="header">
     <div class="container header-inner">
       <div class="brand">
-        <div class="logo"><span data-bind='name'>FELIPPE SANTOS</span></div>
-        <div class="badge"> PORTFOLIO</div>
+        <div class="logo"><span data-bind="name">FELIPPE SANTOS</span></div>
+        <div class="badge">PORTFOLIO</div>
       </div>
 
       <nav class="nav">
@@ -51,186 +55,226 @@
   </header>
 
   <main class="page">
-
-  <section class="hero">
-    <div class="container hero-grid">
-      <div class="reveal in">
-        <div class="kicker">FULLSTACK • SISTEMAS • BANCO DE DADOS</div>
-        <div class="h1">
-          <span class="glowA">FELIPPE</span> <span class="glowB">SANTOS</span>
-        </div>
-        <div class="sub">Apresentação Profissional:</div>
-        <p class="tagline">
-          Estudante de Análise e Desenvolvimento de Sistemas (3º semestre) na Universidade São Judas Tadeu, com foco em desenvolvimento backend, lógica e modelagem de banco de dados. Busco crescimento profissional na área de Tecnologia da Informação.
-        </p>
-
-        <div class="hero-ctas">
-          <a class="btn primary" href="projects.html">VER PROJETOS</a>
-          <a class="btn ghost" href="Felippe_Santos_Currículo.pdf" download>BAIXAR CURRÍCULO</a>
-          <a class="btn" data-bind='github' href="https://github.com/FelippeCR-hub" target="_blank" rel="noreferrer">GITHUB</a>
-          <a class="btn" data-bind='linkedin' href="https://www.linkedin.com/in/felippe-santos011/" target="_blank" rel="noreferrer">LINKEDIN</a>
-        </div>
-      </div>
-
-      <aside class="profile-card reveal in">
-        <div class="profile-inner">
-          <div class="avatar">
-            <img src="assets/img/profile.png" >
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="reveal in">
+          <div class="kicker">FULLSTACK • SISTEMAS • BANCO DE DADOS</div>
+          <div class="h1 type">
+            <span id="heroName" class="type-target">
+              <span class="glowA">FELIPPE</span>
+              <span class="glowB">SANTOS</span>
+            </span>
           </div>
-          <div class="profile-meta">
-            <p class="role"><span data-bind='role'>Dev • PHP / JS • SQL • Hardware</span></p>
+          <div class="sub">Apresentação Profissional:</div>
+          <p class="tagline">
+            Estudante de Análise e Desenvolvimento de Sistemas (3º semestre)
+            na Universidade São Judas Tadeu, com foco em desenvolvimento
+            backend, lógica e modelagem de banco de dados. Busco crescimento
+            profissional na área de Tecnologia da Informação.
+          </p>
+
+          <div class="hero-ctas">
+            <a class="btn primary" href="projects.html">VER PROJETOS</a>
+            <a class="btn ghost" href="Felippe_Santos_Currículo.pdf" download>BAIXAR CURRÍCULO</a>
+            <a class="btn" data-bind="github" href="https://github.com/FelippeCR-hub" target="_blank"
+              rel="noreferrer">GITHUB</a>
+            <a class="btn" data-bind="linkedin" href="https://www.linkedin.com/in/felippe-santos011/" target="_blank"
+              rel="noreferrer">LINKEDIN</a>
           </div>
         </div>
 
-        <div class="profile-stats">
-          <div class="stat">
-            <div class="k">STACK</div>
-            <div class="v">PHP • SQL</div>
+        <aside class="profile-card reveal in">
+          <div class="profile-inner">
+            <div class="avatar">
+              <img src="assets/img/profile.png" />
+            </div>
+            <div class="profile-meta">
+              <p class="role">
+                <span data-bind="role">Dev • PHP / JS • SQL • Hardware</span>
+              </p>
+            </div>
           </div>
-          <div class="stat">
-            <div class="k">FOCO</div>
-            <div class="v">Sistemas</div>
+
+          <div class="profile-stats">
+            <div class="stat">
+              <div class="k">STACK</div>
+              <div class="v">PHP • SQL</div>
+            </div>
+            <div class="stat">
+              <div class="k">FOCO</div>
+              <div class="v">Sistemas</div>
+            </div>
+            <div class="stat">
+              <div class="k">IDADE</div>
+              <div class="v">19</div>
+            </div>
           </div>
-          <div class="stat">
-            <div class="k">IDADE</div>
-            <div class="v">19</div>
+
+          <div style="margin-top: 14px" class="panel">
+            <div class="kicker">CONTATO</div>
+            <div class="muted" style="margin-top: 10px">
+              Email:
+              <a data-bind="email" href="mailto:felippeo435@gmail.com">felippeo435@gmail.com</a><br />
+
+              Local: Osasco - SP <br />
+            </div>
           </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container reveal">
+        <div class="section-title">
+          <h2>SEÇÃO PROFISSIONAL</h2>
+          <div class="hr"></div>
         </div>
-
-        <div style="margin-top:14px" class="panel">
-          <div class="kicker">CONTATO</div>
-          <div class="muted" style="margin-top:10px">
-            Email: <a data-bind="email" href="mailto:felippeo435@gmail.com">felippeo435@gmail.com</a><br/>
-
-            Local: Osasco - SP <br/>
-          </div>
-        </div>
-      </aside>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container reveal">
-      <div class="section-title">
-        <h2>SEÇÃO PROFISSIONAL</h2><div class="hr"></div>
-      </div>
-      <div class="panel">
-        <p class="muted">
-          Desenvolvedor Full Stack com foco em backend e sistemas, com formação técnica em Informática. Experiência prática em PHP, SQL e JavaScript, estruturando regras de negócio e modelagem de banco de dados para construir aplicações organizadas, eficientes e de fácil manutenção.
-        </p>
-        <div class="filters" style="margin-top:12px">
-          <span class="pill">PHP 8</span>
-          <span class="pill">HTML5 & CSS3</span>
-          <span class="pill">Java</span>
-          <span class="pill">MySQL / MariaDB</span>
-          <span class="pill">JavaScript</span>
-          <span class="pill">TypeScript</span>
-          <span class="pill">Python</span>
-          <span class="pill">C#</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="trajetoria" class="section">
-    <div class="container reveal">
-      <div class="section-title">
-        <h2>TRAJETÓRIA PROFISSIONAL</h2><div class="hr"></div>
-      </div>
-
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-date">Nov 2024 – Dez 2024</div>
-            <div class="timeline-role">Desenvolvedor Back-end </div>
-            <div class="timeline-company">(Autônomo)</div>
-            <ul class="bullets">
-              <li>Desenvolvimento de estrutura de banco de dados relacional para gestão de clientes.</li>
-              <li>Implementação de persistência de dados sensíveis seguindo boas práticas de segurança.</li>
-              <li>Criação de regras de negócio para manipulação e validação de dados.</li>
-              <li>Implementação de autenticação e controle de acesso.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-date">Janeiro 2024 - Janeiro 2026</div>
-            <div class="timeline-role">Técnico de Manutenção de Computadores</div>
-            <div class="timeline-company">(Autônomo)</div>
-            <ul class="bullets">
-              <li>• Formatação, instalação e configuração de sistemas operacionais.</li>
-              <li>Limpeza interna e manutenção preventiva de computadores.</li>
-              <li>Troca de pasta térmica e otimização de temperatura.</li>
-              <li>Diagnóstico e solução de problemas de hardware e software.</li>
-            </ul>
-          </div>
-        </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  
-  <section class="section">
-    <div class="container reveal">
-      <div class="section-title">
-        <h2>CERTIFICADOS / DIPLOMAS</h2><div class="hr"></div>
-      </div>
-    
-      <div class="cert-grid" id="certGrid" style="margin-top:14px"></div>
-    </div>
-  </section>
-
-<section class="section">
-    <div class="container reveal">
-      <div class="section-title">
-        <h2>PROJETOS EM DESTAQUE</h2><div class="hr"></div>
-      </div>
-      <div class="grid" id="featuredGrid"></div>
-      <div style="margin-top:14px">
-        <a class="btn" href="projects.html">VER TODOS OS PROJETOS</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="contato" class="section">
-    <div class="container reveal">
-      <div class="section-title">
-        <h2>CONTATO</h2><div class="hr"></div>
-      </div>
-
-      <div class="grid">
-        <div class="card" style="grid-column: span 6;">
-          <h3>Email</h3>
-          <p>Entre em contato direto:</p>
-          <div class="links">
-            <a class="mini-link" href="mailto:felippeo435@gmail.com">felippeo435@gmail.com</a>
-          </div>
-        </div>
-
-        <div class="card" style="grid-column: span 6;">
-          <h3>Redes</h3>
-          <div class="links">
-            <a class="mini-link" data-bind='github' href="https://github.com/FelippeCR-hub" target="_blank" rel="noreferrer">GITHUB</a>
-            <a class="mini-link" data-bind='linkedin' href="https://www.linkedin.com/in/felippe-santos011/" target="_blank" rel="noreferrer">LINKEDIN</a>
+        <div class="panel">
+          <p class="muted">
+            Desenvolvedor Full Stack com foco em backend e sistemas, com
+            formação técnica em Informática. Experiência prática em PHP, SQL e
+            JavaScript, estruturando regras de negócio e modelagem de banco de
+            dados para construir aplicações organizadas, eficientes e de fácil
+            manutenção.
+          </p>
+          <div class="filters" style="margin-top: 12px">
+            <span class="pill">PHP 8</span>
+            <span class="pill">HTML5 & CSS3</span>
+            <span class="pill">Java</span>
+            <span class="pill">MySQL / MariaDB</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill">TypeScript</span>
+            <span class="pill">Python</span>
+            <span class="pill">C#</span>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <script src="assets/js/home.js"></script>
-  <script src="assets/js/certificates.js"></script>
+    <section id="trajetoria" class="section">
+      <div class="container reveal">
+        <div class="section-title">
+          <h2>TRAJETÓRIA PROFISSIONAL</h2>
+          <div class="hr"></div>
+        </div>
 
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-date">Nov 2024 – Dez 2024</div>
+              <div class="timeline-role">Desenvolvedor Back-end</div>
+              <div class="timeline-company">(Autônomo)</div>
+              <ul class="bullets">
+                <li>
+                  Desenvolvimento de estrutura de banco de dados relacional
+                  para gestão de clientes.
+                </li>
+                <li>
+                  Implementação de persistência de dados sensíveis seguindo
+                  boas práticas de segurança.
+                </li>
+                <li>
+                  Criação de regras de negócio para manipulação e validação de
+                  dados.
+                </li>
+                <li>Implementação de autenticação e controle de acesso.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-date">Janeiro 2024 - Janeiro 2026</div>
+              <div class="timeline-role">
+                Técnico de Manutenção de Computadores
+              </div>
+              <div class="timeline-company">(Autônomo)</div>
+              <ul class="bullets">
+                <li>
+                  • Formatação, instalação e configuração de sistemas
+                  operacionais.
+                </li>
+                <li>
+                  Limpeza interna e manutenção preventiva de computadores.
+                </li>
+                <li>Troca de pasta térmica e otimização de temperatura.</li>
+                <li>
+                  Diagnóstico e solução de problemas de hardware e software.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container reveal">
+        <div class="section-title">
+          <h2>CERTIFICADOS / DIPLOMAS</h2>
+          <div class="hr"></div>
+        </div>
+
+        <div class="cert-grid" id="certGrid" style="margin-top: 14px"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container reveal">
+        <div class="section-title">
+          <h2>PROJETOS EM DESTAQUE</h2>
+          <div class="hr"></div>
+        </div>
+        <div class="featured-grid" id="featuredGrid"></div>
+        <div style="margin-top: 14px">
+          <a class="btn" href="projects.html">VER TODOS OS PROJETOS</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section">
+      <div class="container reveal">
+        <div class="section-title">
+          <h2>CONTATO</h2>
+          <div class="hr"></div>
+        </div>
+
+        <div class="grid">
+          <div class="card" style="grid-column: span 6">
+            <h3>Email</h3>
+            <p>Entre em contato direto:</p>
+            <div class="links">
+              <a class="mini-link" href="mailto:felippeo435@gmail.com">felippeo435@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="card" style="grid-column: span 6">
+            <h3>Redes</h3>
+            <div class="links">
+              <a class="mini-link" data-bind="github" href="https://github.com/FelippeCR-hub" target="_blank"
+                rel="noreferrer">GITHUB</a>
+              <a class="mini-link" data-bind="linkedin" href="https://www.linkedin.com/in/felippe-santos011/"
+                target="_blank" rel="noreferrer">LINKEDIN</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="assets/js/home.js"></script>
+    <script src="assets/js/certificates.js"></script>
   </main>
 
   <footer class="footer">
     <div class="container">
-   <center> <div class="small">© <span id="year"></span> Felippe Santos. Todos os direitos reservados. </div></center> 
+      <center>
+        <div class="small">
+          © <span id="year"></span> Felippe Santos. Todos os direitos
+          reservados.
+        </div>
+      </center>
     </div>
   </footer>
 
@@ -240,4 +284,5 @@
   <script src="assets/js/fx.js"></script>
   <script src="assets/js/app.js"></script>
 </body>
+
 </html>

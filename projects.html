@@ -1,5 +1,6 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,13 +11,15 @@
   <meta property="og:description" content="Meu Portfólio como Dev!" />
   <meta property="og:type" content="website" />
 
-  
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Rajdhani:wght@400;600&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Rajdhani:wght@400;600&family=Space+Grotesk:wght@400;600&display=swap"
+    rel="stylesheet" />
 
   <link rel="stylesheet" href="assets/css/global.css" />
 </head>
+
 <body>
   <canvas id="particles"></canvas>
   <div class="blobs" aria-hidden="true">
@@ -52,42 +55,45 @@
   </header>
 
   <main class="page">
+    <section class="section">
+      <div class="container reveal in">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a> / <span>Projetos</span>
+        </div>
 
-  <section class="section">
-    <div class="container reveal in">
-      <div class="breadcrumb">
-        <a href="index.html">Home</a> / <span>Projetos</span>
+        <div class="section-title">
+          <h2>PROJETOS</h2>
+          <div class="hr"></div>
+        </div>
+
+        <div class="searchbar">
+          <input id="projectSearch" type="search" placeholder="Buscar: nome, stack, descrição..."
+            aria-label="Buscar projetos" />
+          <div class="hint">Busca interna</div>
+        </div>
+
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">TODOS</button>
+          <button class="filter-btn" data-filter="web">WEB</button>
+          <button class="filter-btn" data-filter="database">DATABASE</button>
+          <button class="filter-btn" data-filter="hardware">HARDWARE</button>
+        </div>
+
+        <div class="grid" id="projectsGrid"></div>
       </div>
+    </section>
 
-      <div class="section-title">
-        <h2>PROJETOS</h2><div class="hr"></div>
-      </div>
-
-      
-
-      <div class="searchbar">
-        <input id="projectSearch" type="search" placeholder="Buscar: nome, stack, descrição..." aria-label="Buscar projetos">
-        <div class="hint">Busca interna</div>
-      </div>
-
-      <div class="filters">
-        <button class="filter-btn active" data-filter="all">TODOS</button>
-        <button class="filter-btn" data-filter="web">WEB</button>
-        <button class="filter-btn" data-filter="database">DATABASE</button>
-        <button class="filter-btn" data-filter="hardware">HARDWARE</button>
-      </div>
-
-      <div class="grid" id="projectsGrid"></div>
-    </div>
-  </section>
-
-  <script src="assets/js/projects.js"></script>
-
+    <script src="assets/js/projects.js"></script>
   </main>
 
   <footer class="footer">
     <div class="container">
-    <center> <div class="small">© <span id="year"></span> Felippe Santos • Estrutura escalável </div></center> 
+      <center>
+        <div class="small">
+          © <span id="year"></span> 2026 Felippe Santos. Todos os direitos
+          reservados.
+        </div>
+      </center>
     </div>
   </footer>
 
@@ -97,4 +103,5 @@
   <script src="assets/js/fx.js"></script>
   <script src="assets/js/app.js"></script>
 </body>
+
 </html>

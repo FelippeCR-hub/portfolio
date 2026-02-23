@@ -1,5 +1,6 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,13 +11,15 @@
   <meta property="og:description" content="Meu Portfólio como Dev!" />
   <meta property="og:type" content="website" />
 
-  
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Rajdhani:wght@400;600&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Rajdhani:wght@400;600&family=Space+Grotesk:wght@400;600&display=swap"
+    rel="stylesheet" />
 
   <link rel="stylesheet" href="assets/css/global.css" />
 </head>
+
 <body>
   <canvas id="particles"></canvas>
   <div class="blobs" aria-hidden="true">
@@ -34,7 +37,7 @@
     <div class="container header-inner">
       <div class="brand">
         <div class="logo">FELIPPE OLIVEIRA</div>
-        <div class="badge"> PORTFOLIO</div>
+        <div class="badge">PORTFOLIO</div>
       </div>
 
       <nav class="nav">
@@ -52,28 +55,29 @@
   </header>
 
   <main class="page">
+    <section class="section">
+      <div class="container">
+        <div id="breadcrumb" class="breadcrumb reveal in"></div>
+        <div id="projectMount"></div>
+      </div>
+    </section>
 
-  <section class="section">
-    <div class="container">
-      <div id="breadcrumb" class="breadcrumb reveal in"></div>
-      <div id="projectMount"></div>
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <div class="lightbox-inner">
+        <button id="lightboxClose" class="lightbox-close">FECHAR</button>
+        <img id="lightboxImg" alt="Imagem ampliada do projeto" />
+      </div>
     </div>
-  </section>
 
-  <div id="lightbox" class="lightbox" aria-hidden="true">
-    <div class="lightbox-inner">
-      <button id="lightboxClose" class="lightbox-close">FECHAR</button>
-      <img id="lightboxImg" alt="Imagem ampliada do projeto" />
-    </div>
-  </div>
-
-  <script src="assets/js/project.js"></script>
-
+    <script src="assets/js/project.js"></script>
   </main>
 
   <footer class="footer">
     <div class="container">
-      <div class="small">© <span id="year"></span> Felippe Santos • Estrutura escalável </div>
+      <div class="small">
+        © <span id="year"></span> 2026 Felippe Santos. Todos os direitos
+        reservados.
+      </div>
     </div>
   </footer>
 
@@ -83,4 +87,5 @@
   <script src="assets/js/fx.js"></script>
   <script src="assets/js/app.js"></script>
 </body>
+
 </html>

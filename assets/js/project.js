@@ -1,21 +1,26 @@
-
-(async function(){
-  const id = decodeURIComponent((location.hash || "").replace("#","").trim());
+(async function () {
+  const id = decodeURIComponent((location.hash || "").replace("#", "").trim());
   const mount = document.getElementById("projectMount");
-  if(!mount) return;
+  if (!mount) return;
 
   const res = await fetch("assets/data/projects.json");
   const data = await res.json();
-  const idx = Math.max(0, data.findIndex(p => p.id === id));
+  const idx = Math.max(
+    0,
+    data.findIndex((p) => p.id === id),
+  );
   const proj = data[idx] || data[0];
   const prev = data[(idx - 1 + data.length) % data.length];
   const next = data[(idx + 1) % data.length];
-  const nextPrev = {prev, next};
+  const nextPrev = {
+    prev,
+    next
+  };
 
   document.title = `${proj.title} | Felippe Santos`;
 
   const breadcrumb = document.getElementById("breadcrumb");
-  if(breadcrumb){
+  if (breadcrumb) {
     breadcrumb.innerHTML = `
       <a href="index.html">Home</a> /
       <a href="projects.html">Projetos</a> /
@@ -23,13 +28,21 @@
     `;
   }
 
-  const pills = (proj.stack || []).map(s => `<span class="pill">${escapeHtml(s)}</span>`).join("");
-  const bullets = (proj.highlights || []).map(h => `<li>${escapeHtml(h)}</li>`).join("");
-  const gallery = (proj.gallery || []).map((src, idx) => `
-      <div class="shot" data-src="${escapeAttr(src)}" role="button" tabindex="0" aria-label="Abrir imagem ${idx+1}">
-        <img src="${escapeAttr(src)}" alt="${escapeAttr(proj.title)} - imagem ${idx+1}">
+  const pills = (proj.stack || [])
+    .map((s) => `<span class="pill">${escapeHtml(s)}</span>`)
+    .join("");
+  const bullets = (proj.highlights || [])
+    .map((h) => `<li>${escapeHtml(h)}</li>`)
+    .join("");
+  const gallery = (proj.gallery || [])
+    .map(
+      (src, idx) => `
+      <div class="shot" data-src="${escapeAttr(src)}" role="button" tabindex="0" aria-label="Abrir imagem ${idx + 1}">
+        <img src="${escapeAttr(src)}" alt="${escapeAttr(proj.title)} - imagem ${idx + 1}">
       </div>
-  `).join("");
+  `,
+    )
+    .join("");
 
   mount.innerHTML = `
     <div class="panel reveal in">
@@ -42,7 +55,7 @@
       <div style="margin-top:16px" class="grid">
         <div class="card" style="grid-column: span 6;">
           <h3>Objetivo</h3>
-          <p>${escapeHtml((proj.objective || "Projeto para portfolio "))}</p>
+          <p>${escapeHtml(proj.objective || "Projeto para portfolio ")}</p>
         </div>
         <div class="card" style="grid-column: span 6;">
           <h3>Destaques</h3>
@@ -74,28 +87,48 @@
   const lbImg = document.getElementById("lightboxImg");
   const lbClose = document.getElementById("lightboxClose");
 
-  function open(src){
+  function open(src) {
     lbImg.src = src;
     lb.classList.add("is-open");
     document.body.style.overflow = "hidden";
   }
-  function close(){
+
+  function close() {
     lb.classList.remove("is-open");
     document.body.style.overflow = "";
     lbImg.src = "";
   }
 
-  mount.querySelectorAll(".shot").forEach(el => {
+  mount.querySelectorAll(".shot").forEach((el) => {
     const src = el.getAttribute("data-src");
     el.addEventListener("click", () => open(src));
-    el.addEventListener("keydown", (e) => { if(e.key === "Enter" || e.key === " ") open(src); });
+    el.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") open(src);
+    });
   });
-  lb.addEventListener("click", (e) => { if(e.target === lb) close(); });
+  lb.addEventListener("click", (e) => {
+    if (e.target === lb) close();
+  });
   lbClose.addEventListener("click", close);
-  window.addEventListener("keydown", (e)=>{ if(e.key === "Escape") close(); });
+  window.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") close();
+  });
 
-  function escapeHtml(str){
-    return String(str).replace(/[&<>"']/g, (m) => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[m]));
+  function escapeHtml(str) {
+    return String(str).replace(
+      /[&<>"']/g,
+      (m) =>
+      ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;",
+      })[m],
+    );
   }
-  function escapeAttr(str){ return escapeHtml(str).replace(/`/g, "&#96;"); }
+
+  function escapeAttr(str) {
+    return escapeHtml(str).replace(/`/g, "&#96;");
+  }
 })();

@@ -1,11 +1,10 @@
-[
-  {
+[{
     "id": "Security-Lab-API",
     "title": "Security Lab API",
     "category": "web, database",
     "featured": true,
     "tagline": "Projeto",
-    "stack": ["PHP","MySQL","HTML5", "CSS3", "JavaScript"],
+    "stack": ["PHP", "MySQL", "HTML5", "CSS3", "JavaScript"],
     "highlights": ["API educacional que demonstra vulnerabilidades em senhas fracas."],
     "gallery": [
       "assets/img/API1.jpeg",
@@ -14,7 +13,7 @@
       "assets/img/API4.jpeg"
     ]
   },
-   {
+  {
     "id": "sab-otimizacoes",
     "title": "SAB - Otimizações",
     "category": "web",

@@ -1,7 +1,6 @@
-
-(async function(){
+(async function () {
   const mount = document.getElementById("featuredGrid");
-  if(!mount) return;
+  if (!mount) return;
 
   const res = await fetch("assets/data/projects.json");
   const data = await res.json();
@@ -19,7 +18,13 @@
     </article>
   `).join("");
 
-  function escapeHtml(str){
-    return String(str).replace(/[&<>"']/g, (m) => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[m]));
+  function escapeHtml(str) {
+    return String(str).replace(/[&<>"']/g, (m) => ({
+      "&": "&amp;",
+      "<": "&lt;",
+      ">": "&gt;",
+      '"': "&quot;",
+      "'": "&#39;"
+    } [m]));
   }
 })();
