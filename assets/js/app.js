@@ -166,7 +166,7 @@
     const original = tagline.textContent || "";
     const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%&*+-_=?:;[]{}<>/\\|";
     let frame = 0;
-    const duration = 28; 
+    const duration = 12; 
     const total = original.length + duration;
 
     tagline.classList.add("is-decrypting");

@@ -1771,19 +1771,26 @@ body.light .lightbox-inner {
     gap: 8px;
   }
 
-  .nav {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 8px;
-    font-size: 11px;
-    width: 100%;
-  }
+   .nav{
+  display:flex;
+  flex-wrap: nowrap;        
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  overflow-x: auto;       
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;     
+}
+.nav::-webkit-scrollbar{ display:none; } 
 
-  .nav a {
-    padding: 8px 10px;
-    line-height: 1;
-  }
+.nav a{
+  flex: 0 0 auto;            
+  padding: 8px 8px;
+  font-size: 10px;
+  line-height: 1;
+  white-space: nowrap;
+}
 
   .badge {
     display: none;
