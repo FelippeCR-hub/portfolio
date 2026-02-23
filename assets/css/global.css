@@ -220,7 +220,7 @@ body.light .vignette {
   pointer-events: none;
   z-index: -2;
   opacity: 0.08;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='.45'/%3E%3C/svg%3E");
+   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='.45'/%3E%3C/svg%3E");
   mix-blend-mode: overlay;
 }
 
@@ -1862,7 +1862,7 @@ body.light .lightbox-inner {
     padding: 20px 0 30px;
   }
 
-  /* CONTATO MOBILE: força lado a lado */
+ 
   #contato .grid{
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
@@ -1874,11 +1874,7 @@ body.light .lightbox-inner {
     min-width: 0;
   }
 
-  /* Se o email ficar esmagado demais em telas MUITO pequenas, descomente:
-  @media (max-width: 360px){
-    #contato .grid{ grid-template-columns: 1fr !important; }
-  }
-  */
+ 
 }
 
 @media (max-width: 640px) {
@@ -1922,7 +1918,7 @@ body.light .lightbox-inner {
     gap: 16px;
   }
 
-  /* CONTATO MOBILE/TABLET: mantém lado a lado mesmo com .grid -> 1fr */
+ 
   #contato .grid{
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
     gap: 12px !important;
@@ -1955,7 +1951,7 @@ body.light .lightbox-inner {
 
 @media (min-width: 1025px) {
   #contato .grid {
-    max-width: 450px;
+    max-width: 630px;
     gap: 12px;
   }
 }
@@ -2111,4 +2107,19 @@ h1+.searchbar {
   object-fit: cover;
 }
 
-/* CONTATO: tamanho normal no PC */
+html, body { height: 100%; }
+
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main.page{
+  flex: 1 0 auto;
+}
+
+footer.footer{
+  margin-top: auto;
+}
+
