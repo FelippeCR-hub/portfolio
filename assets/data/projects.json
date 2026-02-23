@@ -1,22 +1,31 @@
 [
   {
-    "id": "neon-crm",
+    "id": "Security-Lab-API",
+    "title": "Security Lab API",
+    "category": "web, database",
+    "featured": true,
+    "tagline": "Projeto",
+    "stack": ["PHP","MySQL","HTML5", "CSS3", "JavaScript"],
+    "highlights": ["API educacional que demonstra vulnerabilidades em senhas fracas."],
+    "gallery": [
+      "assets/img/API1.jpeg",
+      "assets/img/API2.jpeg",
+      "assets/img/API3.jpeg",
+      "assets/img/API4.jpeg"
+    ]
+  },
+   {
+    "id": "sab-otimizacoes",
     "title": "SAB - Otimizações",
     "category": "web",
     "featured": true,
     "tagline": "Projeto",
-    "stack": [
-      "HTML5",
-      "CSS3",
-      "JavaScript"
-    ],
-    "highlights": [
-      "Otimizador de performance para computadores"
-    ],
-  
+    "stack": ["Batch Scripting", ".reg"],
+    "highlights": ["Otimizador de performance para computadores"],
     "gallery": [
       "assets/img/sab1.png",
       "assets/img/sab2.png",
+      "assets/img/sab3.png",
       "assets/img/sab3.png"
     ]
   }
