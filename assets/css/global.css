@@ -909,7 +909,7 @@ body.light .header {
 
 @media (max-width: 620px) {
   .grid>* {
-    grid-column: span 12;
+    grid-column: span 6;
   }
 }
 
@@ -1753,7 +1753,7 @@ body.light .lightbox-inner {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 480px) { 
   .header-inner {
     flex-direction: column;
     align-items: stretch;
@@ -1771,26 +1771,30 @@ body.light .lightbox-inner {
     gap: 8px;
   }
 
-   .nav{
-  display:flex;
-  flex-wrap: nowrap;        
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
-  overflow-x: auto;       
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;     
-}
-.nav::-webkit-scrollbar{ display:none; } 
+    .nav{
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
 
-.nav a{
-  flex: 0 0 auto;            
-  padding: 8px 8px;
-  font-size: 10px;
-  line-height: 1;
-  white-space: nowrap;
-}
+  .nav::-webkit-scrollbar{
+    display:none;
+  }
+
+  .nav a{
+    flex: 0 0 auto;
+    padding: 8px 8px;
+    font-size: 10px;
+    line-height: 1;
+    white-space: nowrap;
+  }
+
 
   .badge {
     display: none;
@@ -1857,6 +1861,24 @@ body.light .lightbox-inner {
   .footer {
     padding: 20px 0 30px;
   }
+
+  /* CONTATO MOBILE: força lado a lado */
+  #contato .grid{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 12px !important;
+  }
+  #contato .grid > .card{
+    grid-column: auto !important;
+    width: 100%;
+    min-width: 0;
+  }
+
+  /* Se o email ficar esmagado demais em telas MUITO pequenas, descomente:
+  @media (max-width: 360px){
+    #contato .grid{ grid-template-columns: 1fr !important; }
+  }
+  */
 }
 
 @media (max-width: 640px) {
@@ -1899,6 +1921,15 @@ body.light .lightbox-inner {
     grid-template-columns: 1fr;
     gap: 16px;
   }
+
+  /* CONTATO MOBILE/TABLET: mantém lado a lado mesmo com .grid -> 1fr */
+  #contato .grid{
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 12px !important;
+  }
+  #contato .grid > .card{
+    grid-column: auto !important;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -1925,7 +1956,6 @@ body.light .lightbox-inner {
 @media (min-width: 1025px) {
   #contato .grid {
     max-width: 450px;
-
     gap: 12px;
   }
 }
@@ -2081,3 +2111,4 @@ h1+.searchbar {
   object-fit: cover;
 }
 
+/* CONTATO: tamanho normal no PC */
