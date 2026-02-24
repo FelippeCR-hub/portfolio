@@ -14,6 +14,7 @@
       <div class="links">
         <a class="mini-link" href="project.html#${encodeURIComponent(p.id)}">ABRIR</a>
         <a class="mini-link" href="projects.html">VER TODOS</a>
+        <a class="mini-link" href="https://github.com/FelippeCR-hub">PROJETO NO GITHUB</a>
       </div>
     </article>
   `).join("");
