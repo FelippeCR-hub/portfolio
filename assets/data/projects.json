@@ -1,11 +1,24 @@
-[{
+[
+  {
     "id": "Security-Lab-API",
     "title": "Security Lab API",
     "category": "web, database",
     "featured": true,
     "tagline": "Projeto",
-    "stack": ["PHP", "MySQL", "HTML5", "CSS3", "JavaScript"],
-    "highlights": ["API educacional que demonstra vulnerabilidades em senhas fracas."],
+    "stack": [
+      "PHP",
+      "MySQL",
+      "HTML5",
+      "CSS3",
+      "JavaScript"
+    ],
+    "highlights": [
+      "API educacional que demonstra vulnerabilidades em senhas fracas."
+    ],
+    "links": {
+      "repo": "https://github.com/FelippeCR-hub/Projeto-SecurityLab-API",
+      "live": "https://github.com/FelippeCR-hub/Projeto-SecurityLab-API"
+    },
     "gallery": [
       "assets/img/API1.jpeg",
       "assets/img/API2.jpeg",
@@ -19,8 +32,16 @@
     "category": "web",
     "featured": true,
     "tagline": "Projeto",
-    "stack": ["Batch Scripting", ".reg"],
-    "highlights": ["Otimizador de performance para computadores"],
+    "stack": [
+      "Batch Scripting",
+      ".reg"
+    ],
+    "highlights": [
+      "Otimizador de performance para computadores"
+    ],
+    "links": {
+      "repo": "https://github.com/FelippeCR-hub"
+    },
     "gallery": [
       "assets/img/sab1.png",
       "assets/img/sab2.png",
@@ -34,14 +55,25 @@
     "category": "web",
     "featured": true,
     "tagline": "Projeto",
-    "stack": ["Reach", "TypeScript", "CSS", "Vite", "Zustand", "LocalStorage"],
-    "highlights": ["Simular um OS simples web, com bloco de notas, terminal e funções incluidas"],
-     "web": "https://felippecr-hub.github.io/SistemaOS-Web/",
+    "stack": [
+      "Reach",
+      "TypeScript",
+      "CSS",
+      "Vite",
+      "Zustand",
+      "LocalStorage"
+    ],
+    "highlights": [
+      "Simular um OS simples web, com bloco de notas, terminal e funÃ§Ãµes incluidas"
+    ],
+    "links": {
+      "repo": "https://github.com/FelippeCR-hub/SistemaOS-Web",
+      "live": "https://felippecr-hub.github.io/SistemaOS-Web/"
+    },
     "gallery": [
       "assets/img/img1.jpeg",
       "assets/img/img2.jpeg",
       "assets/img/img3.jpeg"
-    
     ]
   }
 ]
