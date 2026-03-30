@@ -75,10 +75,11 @@
       </div>
       <div class="hero-ctas">
         ${proj.links?.repo ? `<a class="btn ghost" target="_blank" rel="noreferrer" href="${escapeAttr(proj.links.repo)}">REPOSITÓRIO</a>` : ""}
-        ${proj.links?.live ? `<a class="btn" target="_blank" rel="noreferrer" href="${escapeAttr(proj.links.live)}">DEMO</a>` : ""}
+        ${proj.links?.live ? `<a class="btn" target="_blank" rel="noreferrer" href="${escapeAttr(proj.links.live)}">PROJETO NA WEB</a>` : ""}
         <a class="btn ghost" href="project.html#${encodeURIComponent(nextPrev.prev.id)}">◀ ANTERIOR</a>
         <a class="btn ghost" href="project.html#${encodeURIComponent(nextPrev.next.id)}">PRÓXIMO ▶</a>
         <a class="btn" href="projects.html">VOLTAR</a>
+        
       </div>
     </div>
   `;

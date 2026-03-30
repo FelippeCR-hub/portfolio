@@ -27,5 +27,21 @@
       "assets/img/sab3.png",
       "assets/img/sab3.png"
     ]
+  },
+  {
+    "id": "OS Web",
+    "title": "OS Web",
+    "category": "web",
+    "featured": true,
+    "tagline": "Projeto",
+    "stack": ["Reach", "TypeScript", "CSS", "Vite", "Zustand", "LocalStorage"],
+    "highlights": ["Simular um OS simples web, com bloco de notas, terminal e funções incluidas"],
+     "web": "https://felippecr-hub.github.io/SistemaOS-Web/",
+    "gallery": [
+      "assets/img/img1.jpeg",
+      "assets/img/img2.jpeg",
+      "assets/img/img3.jpeg"
+    
+    ]
   }
 ]
