@@ -1,5 +1,5 @@
 [
-  {
+     {
     "id": "Projeto Financeiro",
     "title": "Assistente Financeiro",
     "category": "web",
@@ -14,7 +14,7 @@
       "LocalStorage"
     ],
     "highlights": [
-      "Experi?ncia web que permite organizar finan?as pessoais de forma visual e interativa, com gr?ficos e controles intuitivos"
+      "Experiência web que permite organizar finanças pessoais de forma visual e interativa, com gráficos e controles intuitivos"
     ],
     "links": {
       "repo": "https://github.com/FelippeCR-hub/ProjetoControleFinanceiro",
@@ -28,32 +28,34 @@
     ]
   },
   {
-    "id": "OS Web",
-    "title": "OS Web",
-    "category": "web",
-    "featured": true,
-    "tagline": "Projeto",
-    "stack": [
-      "Reach",
-      "TypeScript",
-      "CSS",
-      "Vite",
-      "Zustand",
-      "LocalStorage"
-    ],
-    "highlights": [
-      "Simular um OS simples web, com bloco de notas, terminal e fun??es incluidas"
-    ],
-    "links": {
-      "repo": "https://github.com/FelippeCR-hub/SistemaOS-Web",
-      "live": "https://felippecr-hub.github.io/SistemaOS-Web/"
-    },
-    "gallery": [
-      "assets/img/img1.jpeg",
-      "assets/img/img2.jpeg",
-      "assets/img/img3.jpeg"
-    ]
+  "id": "Clinica Web",
+  "title": "Sistema de Agendamento para Clínica",
+  "category": "web",
+  "featured": true,
+  "tagline": "Sistema web de agendamento médico",
+  "stack": [
+    "PHP",
+    "MySQL",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "PDO",
+    "Cron Job"
+  ],
+  "highlights": [
+    "Sistema de agendamento médico com painel administrativo e automação de dados, foco em funcionalidades no back-end"
+  ],
+  "links": {
+    "repo": "https://github.com/FelippeCR-hub/clinica-hospitalar",
+    "live": "https://felippeoliveirasanto1775078688000.2102168.meusitehostgator.com.br/"
   },
+  "gallery": [
+    "assets/img/cl1.jpeg",
+    "assets/img/cl2.jpeg",
+    "assets/img/cl3.jpeg",
+    "assets/img/cl4.jpeg"
+  ]
+},
   {
     "id": "Security-Lab-API",
     "title": "Security Lab API",
@@ -81,9 +83,38 @@
       "assets/img/API4.jpeg"
     ]
   },
-  {
+   {
+    "id": "OS Web",
+    "title": "OS Web",
+    "category": "web",
+    "featured": true,
+    "tagline": "Projeto",
+    "stack": [
+      "Reach",
+      "TypeScript",
+      "CSS",
+      "Vite",
+      "Zustand",
+      "LocalStorage"
+    ],
+    "highlights": [
+      "Simular um OS simples web, com bloco de notas, terminal e funções incluidas"
+    ],
+    "links": {
+      "repo": "https://github.com/FelippeCR-hub/SistemaOS-Web",
+      "live": "https://felippecr-hub.github.io/SistemaOS-Web/"
+    },
+    "gallery": [
+      "assets/img/img1.jpeg",
+      "assets/img/img2.jpeg",
+      "assets/img/img3.jpeg"
+    ]
+  },
+  
+ 
+   {
     "id": "sab-otimizacoes",
-    "title": "SAB - Otimiza??es",
+    "title": "SAB - Otimizações",
     "category": "web",
     "featured": true,
     "tagline": "Projeto",
