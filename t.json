@@ -1,5 +1,5 @@
 [
-  {
+     {
     "id": "Projeto Financeiro",
     "title": "Assistente Financeiro",
     "category": "web",
@@ -14,7 +14,7 @@
       "LocalStorage"
     ],
     "highlights": [
-      "Experi?ncia web que permite organizar finan?as pessoais de forma visual e interativa, com gr?ficos e controles intuitivos"
+      "Experiência web que permite organizar finanças pessoais de forma visual e interativa, com gráficos e controles intuitivos"
     ],
     "links": {
       "repo": "https://github.com/FelippeCR-hub/ProjetoControleFinanceiro",
@@ -42,7 +42,7 @@
       "LocalStorage"
     ],
     "highlights": [
-      "Simular um OS simples web, com bloco de notas, terminal e fun??es incluidas"
+      "Simular um OS simples web, com bloco de notas, terminal e funções incluidas"
     ],
     "links": {
       "repo": "https://github.com/FelippeCR-hub/SistemaOS-Web",
@@ -81,9 +81,10 @@
       "assets/img/API4.jpeg"
     ]
   },
-  {
+ 
+   {
     "id": "sab-otimizacoes",
-    "title": "SAB - Otimiza??es",
+    "title": "SAB - Otimizações",
     "category": "web",
     "featured": true,
     "tagline": "Projeto",
